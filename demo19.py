@@ -1,3 +1,4 @@
+import time
 from selenium import webdriver
 from selenium.webdriver import ChromeOptions
 
@@ -8,4 +9,6 @@ browser = webdriver.Chrome(options=option)
 browser.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
     'source': 'Object.defineProperty(navigator, "webdriver", {get: () => undefined})'
 })
-browser.get('https://antispider1.scrape.cuiqingcai.com/')
+browser.get('https://antispider1.scrape.center/')
+time.sleep(5)
+browser.close()
