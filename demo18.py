@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver import ChromeOptions
 from selenium.webdriver.common.by import By
 
+
 use_script = True
 if use_script:
     option = ChromeOptions()
